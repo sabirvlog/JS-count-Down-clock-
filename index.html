@@ -10,15 +10,41 @@
 	<script type="text/javascript" src="script.js"></script>
 </head>
 <body>
+	<section class="section">
 		<div class="hero">
 			<h1>JavaScript CountDown Timer Clock</h1>
 			<div class="line"></div>
 			<p id="count_time"></p>
 		</div>
-
+				<button type="button" onclick="userFunc()">Click Me</button>
 		<aside>
 			<p> We are coming soon...... </p>
 			<cite>_Sabir Khan</cite>
 		</aside>
+		<mark>Welcome everyone on this site</mark>
+</section>
+
+		<section id="form">
+		<form action="sample-form-handler.html" onsubmit="return valideFunc()">
+			<h1>Contact Form</h1>
+			<input type="text" name="text" id="username" placeholder="Enter your Username">
+			<input type="password" name="text" id="password" placeholder="Enter your password">
+			<input type="button" value="Login Now" id="login">
+			<p>create new account? <span><a href="#">forget password?</a></span></p>
+			<input type="button" value="SignUp" id="signup">
+			<p>You can signed through social media</p>
+
+			<span id="btn">
+			<a href="#">facebook</a>
+			<a href="#" class="btn-2">Google</a>
+			</span>
+		</form>
+	</section>	
 </body>
+		<script type="text/javascript">
+			function userFunc() {
+				var x = prompt ("What's your name?")
+				alert ("Wellcome, you are " + x);
+			}
+		</script>
 </html>
